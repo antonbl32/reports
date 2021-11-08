@@ -1,0 +1,3 @@
+report:
+  report-location: resources/jasper
+  report-template: resources/jasper

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="document" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f70b20b4-4ba8-4b6f-814f-dfc9e4c0ba6b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="e4839e35-d4be-4d9b-8523-840e00539b58">
+		<queryString language="SQL">
+			<![CDATA[]]>
+		</queryString>
+		<field name="name" class="java.lang.String"/>
+		<field name="soname" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="STUDENTS" class="java.util.Collection"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="documentName" class="java.lang.String"/>
+	<field name="typeOfDocuments" class="java.lang.String"/>
+	<variable name="documentName" class="java.lang.String"/>
+	<variable name="typeOfDocuments" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="73" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="73" backcolor="#C0C0C0" uuid="26611c35-026e-46f6-807a-c750b96b692e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="395" y="10" width="160" height="20" uuid="345b6a8f-9c55-49fd-93d9-d0a0e5d5ba59"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Java Spring REST Jasper Reports]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="217" y="21" width="120" height="30" uuid="7ee4bcfe-ae0a-4ac6-987e-af4c3b2fc421"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{documentName}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="5" width="200" height="55" uuid="9332e66d-5f8b-463c-9346-03a98e6f646b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="9" width="355" height="20" uuid="bed329e5-e65f-47d6-bc45-bc40667e2da1"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Students information:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="233" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="16" width="555" height="200" uuid="9f1121f9-d3b4-4cef-8753-633a159fe8d8"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="c697b571-f9b2-4ee2-866c-4f0cb9f23af3">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{STUDENTS})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="ea334b9c-c7fa-4cf7-ad27-740b804f8e19">
+						<jr:tableHeader style="Table 1_TH" height="30">
+							<staticText>
+								<reportElement x="11" y="6" width="70" height="20" uuid="76ea0401-3f37-4559-90fe-b26cf4601386"/>
+								<text><![CDATA[Students:]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="fe9c9058-f5dc-4623-b558-59c7c0bf3a48"/>
+								<text><![CDATA[name]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="dfecd4f0-5d60-4e16-be13-da6fa05376d8"/>
+								<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="3da68d90-407f-4558-876b-f354d387c371">
+						<jr:tableHeader style="Table 1_TH" height="30"/>
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="5fcbe656-3aae-4435-a5f4-f0236f1feaff"/>
+								<text><![CDATA[soname]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="1f7f4667-46f5-4004-9933-7d1f1f2c50e2"/>
+								<textFieldExpression><![CDATA[$F{soname}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="490" y="21" width="70" height="30" uuid="3ceb3273-5fbf-4da1-bc8a-143daf27983a"/>
+				<textFieldExpression><![CDATA[$F{typeOfDocuments}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
