@@ -25,7 +25,7 @@ public class ReportController {
     @Autowired
     private PrintService printService;
 
-    @RequestMapping(value = "/report", method = RequestMethod.GET, produces = "application/pdf")
+    @RequestMapping(value = "/report", method = RequestMethod.GET, produces = {"application/json; charset=UTF-8"})
     public ResponseEntity<InputStreamResource> download(@Valid @RequestBody ReportDTO reportDTO) throws IOException {
         InputStream inputStream = printService.print(reportDTO);
         //System.out.println("Calling Download:- " + fileName);
